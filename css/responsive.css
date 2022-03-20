@@ -1,0 +1,84 @@
+@media(max-width:725px){
+    .logo:before {
+        display: none;
+    }
+    .logo {
+        background: #697d8b;
+        position: relative;
+        z-index: 53;
+        padding: 20px 0px;
+    }
+    .logo img {
+        padding-left: 20px;
+    }
+    .bars-icon i {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .menu {
+        background: #697d8b;
+        border-top: 2px solid #ddd;
+        z-index: 99999;
+        text-align: revert;
+        justify-content: flex-start;
+        transition: 0.5s;
+        position: relative;
+        top: 0;
+        left: -100%;
+    }
+    .cros-sign{
+        display: inline-block;
+    }
+    .cros-sign i {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: white;
+    }
+    .cros-sign,.bars-icon{
+        cursor: pointer;
+    }
+    .menu::before {
+        clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    ul, ol {
+        height: 100%;
+    }
+    .menu ul li {
+        display: block;
+        padding: 5px 20px;
+    }
+    .hero-content {
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    .hero-content h1 {
+        line-height: 1;
+        font-size: 20px;
+    }
+    .hero-content p {
+        margin: 15px 0px;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    .styling-button {
+        width: 125px;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+    .styling-button-us {
+        width: 118px;
+        height: 45px;
+    }
+    .hero-content a span {
+        padding: 5px 10px;
+    }
+    .menu::before {
+        display: none;
+    }
+}
